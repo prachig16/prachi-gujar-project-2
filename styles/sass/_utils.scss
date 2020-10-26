@@ -21,6 +21,15 @@ $letterSpacing: 1.1px) {
     letter-spacing: $letterSpacing;
 }
 
+@mixin flexDef($flex:flex, $direction:row, $justify:center, $align:center){
+    display: $flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
 html{
     font-size: 62.5%;
 }
@@ -29,6 +38,13 @@ html{
     padding: 0;
     margin:0;
 }
+
+img{
+    display: block;
+    width: 100%;
+    height:auto;
+}
+
 
 .wrapper{
     max-width:1240px;

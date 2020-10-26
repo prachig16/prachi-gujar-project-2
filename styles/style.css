@@ -244,6 +244,12 @@ html {
   margin: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .wrapper {
   max-width: 1240px;
   width: 90%;
