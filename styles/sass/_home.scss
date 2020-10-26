@@ -1,0 +1,5 @@
+// home page styles
+
+h1{
+    @include fontDef($fontDefault, 11rem)
+}

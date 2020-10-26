@@ -1,0 +1,37 @@
+// Setting the SCSS variables
+$plum: #4c0341;
+$orange: #FE6F19;
+$white: #fff;
+$black: #0D0D0D;
+$red: #882c07;
+$mauve: #FAE5FF;
+$fontDefault:'Pompiere', cursive;
+$lato: 'Lato', sans-serif;
+
+// To consult Designer: default line height & letter spacing
+@mixin fontDef($family: $fontDefault,
+$sizeValue: 2rem, 
+$weight: 400, 
+$lineHeight: 6.4rem, 
+$letterSpacing: 1.1px) {
+    font-family: $family;
+    font-size: $sizeValue;
+    font-weight: $weight;
+    line-height: $lineHeight;
+    letter-spacing: $letterSpacing;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    padding: 0;
+    margin:0;
+}
+
+.wrapper{
+    max-width:1240px;
+    width: 90%;
+    margin: 0 auto;
+}
