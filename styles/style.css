@@ -21,10 +21,6 @@ figcaption, figure, main {
   display: block;
 }
 
-figure {
-  margin: 1em 40px;
-}
-
 hr {
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
@@ -250,19 +246,6 @@ img {
   height: auto;
 }
 
-a,
-h2,
-h3,
-.moreInfo,
-.readInfo {
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-footer a {
-  text-transform: capitalize;
-}
-
 .wrapper {
   max-width: 1240px;
   width: 90%;
@@ -275,4 +258,333 @@ h1 {
   font-weight: 400;
   line-height: 6.4rem;
   letter-spacing: 1.1px;
+  color: #4c0341;
+}
+
+h1.contact,
+h1.blog,
+h1.about {
+  font-family: "Pompiere", cursive;
+  font-size: 8rem;
+  font-weight: 400;
+  line-height: 9.2rem;
+  letter-spacing: 1.2px;
+  color: #4c0341;
+}
+
+h2 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.2px;
+  color: #4c0341;
+}
+
+h3 {
+  font-family: "Pompiere", cursive;
+  font-size: 5.2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.6px;
+  color: #0D0D0D;
+}
+
+h4 {
+  font-family: "Pompiere", cursive;
+  font-size: 4.2rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.3px;
+  color: #0D0D0D;
+}
+
+h5 {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.3px;
+  color: #4c0341;
+}
+
+.topNav a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  color: #0D0D0D;
+}
+
+p,
+footer {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #0D0D0D;
+}
+
+.logo {
+  font-family: "Pompiere", cursive;
+  font-size: 3.58rem;
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 1.1px;
+  color: #0D0D0D;
+}
+
+footer,
+.firstSection h2 {
+  text-align: center;
+}
+
+.moreInfo,
+.readInfo {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #4c0341;
+}
+
+.readInfo {
+  background-color: #882c07;
+}
+
+.moreInfo:hover,
+.moreInfo:focus {
+  background-color: transparent;
+  color: black;
+  border: 5px solid #4c0341;
+}
+
+.readInfo:hover,
+.readInfo:focus {
+  background-color: transparent;
+  color: black;
+  border: 5px solid #882c07;
+}
+
+a,
+h2,
+h3,
+h4,
+.moreInfo,
+.readInfo,
+h1.contact,
+h1.blog,
+h1.about {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.topNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topNav li {
+  list-style: none;
+}
+
+.topNav li a {
+  padding: 5px 10px;
+  margin: 0px 5px;
+}
+
+.topNav li a:hover,
+.topNav li a:focus,
+.topNav li a:active {
+  color: #fff;
+  background-color: #4c0341;
+}
+
+header {
+  background-image: url("../../shoe-kloset/header-image.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20px 0;
+}
+
+.topContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+p.logo {
+  max-width: 10%;
+}
+
+h1 {
+  margin: 0;
+  padding: 150px 0;
+  max-width: 20%;
+}
+
+.headerImg {
+  margin: 0;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 20vh;
+}
+
+.firstSection {
+  background-color: #FAE5FF;
+  text-align: center;
+  padding: 25% 0 20% 0;
+}
+
+.firstSection h2,
+.firstSection p {
+  padding-bottom: 50px;
+}
+
+.secondSection {
+  background-color: #fff;
+}
+
+.secondSection .leftImg,
+.secondSection .rightImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+}
+
+.secondSection .leftImg .rightContent,
+.secondSection .rightImg .rightContent {
+  padding: 50px 0;
+  margin-left: 50px;
+  width: calc(50% - 50px);
+}
+
+.leftImg figure {
+  margin-right: 50px;
+  width: calc(50%-50px);
+}
+
+.leftImg figure img {
+  position: relative;
+  left: -100px;
+  top: -30px;
+  -webkit-box-shadow: 30px 30px #FE6F19;
+          box-shadow: 30px 30px #FE6F19;
+}
+
+.rightContent h4,
+.leftContent h4 {
+  padding-bottom: 20px;
+}
+
+.rightContent p,
+.leftContent p {
+  padding-bottom: 30px;
+}
+
+.rightImg {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.rightImg .leftContent {
+  text-align: right;
+  margin-right: 50px;
+  padding: 60px 0;
+  width: calc(50% - 50px);
+}
+
+.rightImg figure {
+  margin-left: 50px;
+  width: calc(50%-50px);
+}
+
+.rightImg figure img {
+  position: relative;
+  right: -100px;
+  bottom: -30px;
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
+}
+
+.thirdSection i {
+  font-size: 2rem;
+  color: #fff;
+  background-color: #4c0341;
+  padding: 30px;
+  border-radius: 50%;
+}
+
+.fourthSection {
+  background-image: url("../../../../week-2/prachi-gujar-project-two/shoe-kloset/banner.jpg");
+  min-height: 30vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 20px 0;
+}
+
+.sixthSection {
+  background-color: #FAE5FF;
+  padding: 50px 0;
+}
+
+.sixthSection .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.sixthSection .gallery figure {
+  margin: 0 30px 0 0;
+  width: calc( (100% - 60px) / 3);
+}
+
+.gallery figure:nth-child(3) {
+  margin-right: 0;
+}
+
+footer {
+  background-color: #882c07;
+  padding: 10px;
+}
+
+footer p,
+footer a {
+  text-transform: capitalize;
+  color: #fff;
+  text-align: center;
 }

@@ -1,0 +1,102 @@
+h1{
+    @include fontDef($fontDefault, 11rem)
+    color:$plum;
+}
+
+h1.contact,
+h1.blog,
+h1.about{
+    @include fontDef($fontDefault, 8rem,400,9.2rem,1.2px)
+    color:$plum;
+
+}
+
+h2{
+    @include fontDef($fontDefault, 5.2rem ,400 , 5rem, 1.2px)
+    color: $plum;
+}
+
+h3{
+    @include fontDef($fontDefault, 5.2rem ,400 , 5rem, 1.6px)
+    color: $black;
+}
+
+
+h4{
+    @include fontDef($fontDefault, 4.2rem ,400 , 5rem, 1.3px)
+    color:$black;
+}
+
+h5{
+    @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
+    color: $plum;
+}
+
+
+
+.topNav a{
+    @include fontDef($lato,2rem ,700 ,2.9rem ,1px )
+    color: $black;
+}
+
+p,
+footer{
+    @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px)
+    color: $black;
+}
+
+.logo{
+    @include fontDef($fontDefault,3.58rem ,400 ,3.6rem ,1.1px)
+    color:$black;
+}
+
+footer,
+.firstSection h2{
+    text-align: center;
+}
+
+
+.moreInfo,
+.readInfo{
+    @include fontDef($lato,2rem ,400 ,3.2rem ,1px )
+    color:$white;
+    padding: 10px 20px;
+    background-color:$plum;
+}
+
+.readInfo{
+    background-color: $red;
+}
+
+.moreInfo:hover,
+.moreInfo:focus{
+    background-color: transparent;
+    color: black;
+    border: 5px solid $plum;
+}
+
+.readInfo:hover,
+.readInfo:focus{
+    background-color: transparent;
+    color: black;
+    border: 5px solid $red;
+}
+
+
+
+a,
+h2,
+h3,
+h4,
+.moreInfo,
+.readInfo,
+h1.contact,
+h1.blog,
+h1.about{
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+

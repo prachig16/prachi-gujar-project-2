@@ -1,5 +1,163 @@
 // home page styles
 
-h1{
-    @include fontDef($fontDefault, 11rem)
+
+// HEADER styles
+header{
+    background-image: url('../../shoe-kloset/header-image.jpg');
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 20px 0;
 }
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+p.logo{
+    max-width:10%;
+}
+
+h1{
+    margin:0;
+    padding: 150px 0;
+    max-width: 20%;
+}
+
+.headerImg{
+    margin:0;
+    width: 50%;
+    height:50%;
+    position: absolute;
+    right:0;
+    bottom:20vh;
+}
+
+
+// MAIN styles
+.firstSection{
+    background-color: $mauve;
+    text-align: center;
+    padding: 25% 0 20% 0;
+    h2,
+    p{
+        padding-bottom:50px;
+    }
+}
+
+// SECOND section styles
+.secondSection{
+    background-color: $white;
+    .leftImg,
+    .rightImg{
+        display:flex;
+        justify-content: space-between;
+        height: auto;
+        .rightContent{
+            padding: 50px 0;
+            margin-left: 50px;
+            width: calc(50% - 50px);   
+        }
+    }
+}
+
+.leftImg figure{
+    margin-right: 50px;
+    width: calc(50%-50px);   
+    img{
+        position: relative;
+        left:-100px;
+        top: -30px;
+        box-shadow: 30px 30px $orange;
+        
+    }
+}
+
+
+
+.rightContent h4,
+.leftContent h4{
+    padding-bottom: 20px;
+}
+
+.rightContent p,
+.leftContent p{
+    padding-bottom: 30px;
+}
+
+
+
+.rightImg{
+    flex-direction: row-reverse;
+    .leftContent{
+        text-align: right;
+        margin-right:50px;
+        padding: 60px 0;
+        width: calc(50% - 50px);
+    }
+
+    figure{
+        margin-left:50px;
+        width: calc(50%-50px);
+        img{
+            position: relative;
+            right:-100px;
+            bottom:-30px;
+            box-shadow: -30px 30px $orange;
+        }
+    }
+}
+
+
+
+
+// THIRD Section styles
+.thirdSection i{
+    font-size:2rem;
+    color: $white;
+    background-color: $plum;
+    padding:30px;
+    border-radius: 50%;
+}
+
+
+// FOURTH section
+
+.fourthSection{
+    background-image: url('../../../../week-2/prachi-gujar-project-two/shoe-kloset/banner.jpg');
+    min-height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    padding: 20px 0;
+
+}
+
+
+
+// SIXTH section
+.sixthSection{
+    background-color: $mauve;
+    padding: 50px 0;
+    .gallery{
+        display:flex;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+
+        figure{
+            margin: 0 30px 0 0;
+            width:calc( (100% - 60px) / 3);
+        }
+    }
+}
+
+.gallery figure:nth-child(3){
+    margin-right: 0;
+}
+
+

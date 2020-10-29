@@ -1,0 +1,12 @@
+// FOOTER styles
+
+footer{
+    background-color: $red;
+    padding: 10px;
+    p,
+    a{
+        text-transform: capitalize;
+        color: $white;
+        text-align: center;
+    }
+}
