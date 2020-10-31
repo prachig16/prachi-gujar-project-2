@@ -27,11 +27,19 @@ h4{
     color:$black;
 }
 
-h3.blogSide{
+h3.blogSide,
+.emailInfo{
     @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
     color: $plum;
 }
 
+.socialNav li{
+    list-style: none;
+    a{
+        @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
+        color: $plum;
+    }    
+}
 
 
 .topNav a{
@@ -73,35 +81,6 @@ footer,
     text-align: center;
 }
 
-
-.moreInfo,
-.readInfo{
-    @include fontDef($lato,2rem ,400 ,3.2rem ,1px )
-    color:$white;
-    padding: 10px 20px;
-    background-color:$plum;
-}
-
-.readInfo{
-    background-color: $red;
-}
-
-.moreInfo:hover,
-.moreInfo:focus,
-.moreInfo:active{
-    background-color: transparent;
-    color: black;
-    border: 5px solid $plum;
-}
-
-.readInfo:hover,
-.readInfo:focus,
-.readInfo:active{
-    background-color: transparent;
-    color: black;
-    border: 5px solid $red;
-}
-
 a,
 h2,
 h3,
@@ -110,26 +89,82 @@ h4,
 .readInfo,
 h1.contact,
 h1.blog,
-h1.about{
+h1.about,
+.emailInfo{
     text-transform: uppercase;
     text-decoration: none;
 }
 
 
-
 // Form typography
-
 input,
 textarea{
-    @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px)
+    @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px);
     color: $black;
 }
 
+
+
+
+// BUTTON styles.......
+// General style......
+
+.moreInfo,
+.readInfo,
 .submit{
     @include fontDef($lato,2rem ,400 ,3.2rem ,1px )
-    text-transform: uppercase;
     color: $white;
     padding: 10px 20px;
+}
+
+
+// general Hover/active/focus styles...
+.moreInfo:hover,
+.moreInfo:focus,
+.moreInfo:active,
+.readInfo:hover,
+.readInfo:focus,
+.readInfo:active,
+.submit:hover,
+.submit:focus,
+.submit:active,
+.contactForm .submit:hover,
+.contactForm .submit:active,
+.contactForm .submit:focus{
+    background-color: transparent;
+    color: black;
+    font-weight: 700;
+}
+
+// HOME Button styles...
+
+.moreInfo,
+.readInfo{
+    background-color:$plum;
+    border: 5px solid $plum;
+}
+
+.readInfo{
+    background-color: $red;
+    border: 5px solid $red;
+}
+
+.moreInfo:hover,
+.moreInfo:focus,
+.moreInfo:active{
+    border: 5px solid $plum;
+}
+
+.readInfo:hover,
+.readInfo:focus,
+.readInfo:active{
+    border: 5px solid $red;
+}
+
+
+// BLOGPOST submit BUTTON styles...
+.submit{
+    text-transform: uppercase;
     background-color: $plum;
     border: 5px solid $plum;
 }
@@ -137,8 +172,45 @@ textarea{
 .submit:hover,
 .submit:focus,
 .submit:active{
-    background-color: transparent;
-    color: black;
     border: 5px solid $plum;
 }
 
+
+
+// CONTACT submit BUTTON styles....
+.contactForm .submit{
+    background-color: $red;
+    border: 5px solid $red;
+    padding: 0 30px;
+}
+
+.contactForm .submit:hover,
+.contactForm .submit:active,
+.contactForm .submit:focus{
+    border: 5px solid $red;
+}
+
+
+// Removing hover properties for phone users....
+@media (max-width:750px){
+
+    .moreInfo:hover,
+    .readInfo:hover,
+    .submit:hover,
+    .contactForm .submit:hover{
+        color:white;
+    }
+    .moreInfo:hover,
+    .readInfo:hover,
+    .submit:hover{
+        background-color:$plum;
+        border: 5px solid $plum;
+    }
+
+    .readInfo:hover,
+    .contactForm .submit:hover{
+        background-color: $red;
+        border: 5px solid $red;
+    }
+
+}

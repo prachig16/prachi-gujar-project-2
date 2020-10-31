@@ -24,6 +24,7 @@
 h1.contact,
 h1.blog,
 h1.about{
+    padding: 0;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,4 +62,7 @@ h1.about{
 // CONTACT page style
 .contactPage{
     background-image: url('../shoe-kloset/contact-image.jpg');
+    min-height: 70vh;
+    background-position: inherit;
+    background-attachment: scroll;
 }

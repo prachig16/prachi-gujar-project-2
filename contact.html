@@ -29,21 +29,46 @@
     </header>
 
     <main>
-        <form action="#" class="wrapper">
-            <div class="formContainer">
-                <label for="name" class="srOnly">Name</label>
-                <input type="text" id="name" name="name" placeholder="Name">
-        
-                <label for="email" class="srOnly">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email address">
+        <div class="contactContainer wrapper">
+            <form action="#" class="contactForm">
+                <div class="formContainer">
+                    <label for="name" class="srOnly">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+            
+                    <label for="email" class="srOnly">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+                </div>
+            
+                <label for="message" class="srOnly">Message</label>
+                <textarea name="message" id="message" cols="70" rows="10" placeholder="Comment" required maxlength="200"></textarea>
+            
+                <input type="submit" class="submit" value="submit">
+            </form>
+            
+            <div class="contactInfo">
+                <nav class="socialNav">
+                    <ul>
+                        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </nav>
+                <p class="emailInfo">info@email.com</h2>
+                <p>123-456-7890</p>
+                <p>123 Queen street West, Unit 10</p>
+                <p>Toronto, Ontario</p>
+                <p>M5V2D5</p>
             </div>
-        
-            <label for="message" class="srOnly">Message</label>
-            <textarea name="message" id="message" cols="70" rows="10" placeholder="Comment" required maxlength="200"></textarea>
-        
-            <input type="submit" class="submit" value="post comment">
-        </form>
+
+        </div>
     </main>
+
+    <footer>
+        <p class="wrapper"> Copyright <i class="far fa-copyright"></i> 2019 HackerYou | <a
+                href="https://junocollege.com/">Created at Juno College of Technology</a>
+        </p>
+    </footer>
     
 </body>
 </html>

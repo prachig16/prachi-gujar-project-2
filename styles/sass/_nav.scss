@@ -1,4 +1,6 @@
 
+
+// TOP Nav styles....
 .topNav{
     display: flex;
     justify-content: space-evenly;
@@ -14,9 +16,45 @@
     a:hover,
     a:focus,
     a:active{
-        color:$white;
+        color: $white;
         background-color: $plum;
     }
 
 }
 
+// SOCIAL Nav for contact page..
+.socialNav {
+    width: 90%;
+    ul{
+        display: flex;
+        align-items: center;
+        li{
+            padding: 20px;
+            text-align: center;
+        }
+    }
+}
+    
+
+.socialNav a{
+        padding-bottom: 5px;
+        border-bottom: 3px solid transparent;
+}
+
+.socialNav li:nth-child(1){
+        padding-left: 0;
+}
+
+.socialNav a:hover,
+.socialNav a:focus,
+.socialNav a:active{
+    border-bottom: 3px solid $plum;
+}
+
+// Removing the hover styles for mobile site....
+
+@media (max-width: 750px){
+    .socialNav a:hover{
+        border-bottom: 3px solid transparent;    
+    }
+}

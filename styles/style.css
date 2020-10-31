@@ -306,7 +306,21 @@ h4 {
   color: #0D0D0D;
 }
 
-h3.blogSide {
+h3.blogSide,
+.emailInfo {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.3px;
+  color: #4c0341;
+}
+
+.socialNav li {
+  list-style: none;
+}
+
+.socialNav li a {
   font-family: "Pompiere", cursive;
   font-size: 3rem;
   font-weight: 400;
@@ -370,38 +384,6 @@ footer,
   text-align: center;
 }
 
-.moreInfo,
-.readInfo {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 3.2rem;
-  letter-spacing: 1px;
-  color: #fff;
-  padding: 10px 20px;
-  background-color: #4c0341;
-}
-
-.readInfo {
-  background-color: #882c07;
-}
-
-.moreInfo:hover,
-.moreInfo:focus,
-.moreInfo:active {
-  background-color: transparent;
-  color: black;
-  border: 5px solid #4c0341;
-}
-
-.readInfo:hover,
-.readInfo:focus,
-.readInfo:active {
-  background-color: transparent;
-  color: black;
-  border: 5px solid #882c07;
-}
-
 a,
 h2,
 h3,
@@ -410,7 +392,8 @@ h4,
 .readInfo,
 h1.contact,
 h1.blog,
-h1.about {
+h1.about,
+.emailInfo {
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -425,15 +408,60 @@ textarea {
   color: #0D0D0D;
 }
 
+.moreInfo,
+.readInfo,
 .submit {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.2rem;
   letter-spacing: 1px;
-  text-transform: uppercase;
   color: #fff;
   padding: 10px 20px;
+}
+
+.moreInfo:hover,
+.moreInfo:focus,
+.moreInfo:active,
+.readInfo:hover,
+.readInfo:focus,
+.readInfo:active,
+.submit:hover,
+.submit:focus,
+.submit:active,
+.contactForm .submit:hover,
+.contactForm .submit:active,
+.contactForm .submit:focus {
+  background-color: transparent;
+  color: black;
+  font-weight: 700;
+}
+
+.moreInfo,
+.readInfo {
+  background-color: #4c0341;
+  border: 5px solid #4c0341;
+}
+
+.readInfo {
+  background-color: #882c07;
+  border: 5px solid #882c07;
+}
+
+.moreInfo:hover,
+.moreInfo:focus,
+.moreInfo:active {
+  border: 5px solid #4c0341;
+}
+
+.readInfo:hover,
+.readInfo:focus,
+.readInfo:active {
+  border: 5px solid #882c07;
+}
+
+.submit {
+  text-transform: uppercase;
   background-color: #4c0341;
   border: 5px solid #4c0341;
 }
@@ -441,9 +469,39 @@ textarea {
 .submit:hover,
 .submit:focus,
 .submit:active {
-  background-color: transparent;
-  color: black;
   border: 5px solid #4c0341;
+}
+
+.contactForm .submit {
+  background-color: #882c07;
+  border: 5px solid #882c07;
+  padding: 0 30px;
+}
+
+.contactForm .submit:hover,
+.contactForm .submit:active,
+.contactForm .submit:focus {
+  border: 5px solid #882c07;
+}
+
+@media (max-width: 750px) {
+  .moreInfo:hover,
+  .readInfo:hover,
+  .submit:hover,
+  .contactForm .submit:hover {
+    color: white;
+  }
+  .moreInfo:hover,
+  .readInfo:hover,
+  .submit:hover {
+    background-color: #4c0341;
+    border: 5px solid #4c0341;
+  }
+  .readInfo:hover,
+  .contactForm .submit:hover {
+    background-color: #882c07;
+    border: 5px solid #882c07;
+  }
 }
 
 .homePage,
@@ -472,6 +530,7 @@ textarea {
 h1.contact,
 h1.blog,
 h1.about {
+  padding: 0;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -507,6 +566,9 @@ h1.about {
 
 .contactPage {
   background-image: url("../shoe-kloset/contact-image.jpg");
+  min-height: 70vh;
+  background-position: inherit;
+  background-attachment: scroll;
 }
 
 .topNav {
@@ -535,6 +597,45 @@ h1.about {
 .topNav li a:active {
   color: #fff;
   background-color: #4c0341;
+}
+
+.socialNav {
+  width: 90%;
+}
+
+.socialNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.socialNav ul li {
+  padding: 20px;
+  text-align: center;
+}
+
+.socialNav a {
+  padding-bottom: 5px;
+  border-bottom: 3px solid transparent;
+}
+
+.socialNav li:nth-child(1) {
+  padding-left: 0;
+}
+
+.socialNav a:hover,
+.socialNav a:focus,
+.socialNav a:active {
+  border-bottom: 3px solid #4c0341;
+}
+
+@media (max-width: 750px) {
+  .socialNav a:hover {
+    border-bottom: 3px solid transparent;
+  }
 }
 
 .firstSection {
@@ -674,6 +775,7 @@ h1.about {
 
 .fifthSection .popular {
   margin-left: 30px;
+  padding-left: 30px;
   width: calc(70% - 30px);
 }
 
@@ -715,6 +817,43 @@ h1.about {
 
 .gallery figure:nth-child(3) {
   margin-right: 0;
+}
+
+main {
+  background-color: #FAE5FF;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+.contactContainer .contactForm {
+  padding: 50px;
+  background-color: #fff;
+  -webkit-box-shadow: -50px 50px #FE6F19;
+          box-shadow: -50px 50px #FE6F19;
+  position: relative;
+  top: -25vh;
+  margin-left: 100px;
+  width: calc(70% - 100px);
+}
+
+.contactContainer .contactInfo {
+  width: 25%;
+}
+
+.contactContainer .contactInfo .emailInfo {
+  padding-bottom: 15px;
 }
 
 .blogPage {
@@ -858,7 +997,7 @@ textarea[id="message"] {
   background-color: transparent;
   border: 2px solid #FE6F19;
   padding: 10px;
-  margin: 20px 0;
+  margin: 30px 0;
   width: 100%;
 }
 
@@ -866,6 +1005,10 @@ input[type="submit"] {
   padding: 15px 30px;
   margin-bottom: 50px;
   width: 100%;
+}
+
+.contactForm .submit {
+  margin: 0;
 }
 
 footer {
