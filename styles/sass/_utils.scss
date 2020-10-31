@@ -8,7 +8,8 @@ $mauve: #FAE5FF;
 $fontDefault:'Pompiere', cursive;
 $lato: 'Lato', sans-serif;
 
-// To consult Designer: default line height & letter spacing
+// After consulting designer on helpcue:
+
 @mixin fontDef($family: $fontDefault,
 $sizeValue: 2rem, 
 $weight: 400, 
@@ -20,15 +21,6 @@ $letterSpacing: 1.1px) {
     line-height: $lineHeight;
     letter-spacing: $letterSpacing;
 }
-
-@mixin flexDef($flex:flex, $direction:row, $justify:center, $align:center){
-    display: $flex;
-    flex-direction: $direction;
-    justify-content: $justify;
-    align-items: $align;
-}
-
-
 
 html{
     font-size: 62.5%;
@@ -45,10 +37,14 @@ img{
     height:auto;
 }
 
-
-
 .wrapper{
-    max-width:1240px;
+    max-width: 1280px;
     width: 90%;
+    margin: 0 auto;
+}
+
+.wrapper1{
+    max-width: 640px;
+    width:80%;
     margin: 0 auto;
 }

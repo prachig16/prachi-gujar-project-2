@@ -247,8 +247,14 @@ img {
 }
 
 .wrapper {
-  max-width: 1240px;
+  max-width: 1280px;
   width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper1 {
+  max-width: 640px;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -412,8 +418,8 @@ h1.about {
   background-color: #4c0341;
 }
 
-header {
-  background-image: url("../../shoe-kloset/header-image.jpg");
+.homePage {
+  background-image: url("../shoe-kloset/header-image.jpg");
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -432,7 +438,7 @@ header {
           justify-content: space-between;
 }
 
-p.logo {
+.logo {
   max-width: 10%;
 }
 
@@ -466,8 +472,7 @@ h1 {
   background-color: #fff;
 }
 
-.secondSection .leftImg,
-.secondSection .rightImg {
+.leftImg {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,24 +482,52 @@ h1 {
   height: auto;
 }
 
-.secondSection .leftImg .rightContent,
-.secondSection .rightImg .rightContent {
-  padding: 50px 0;
-  margin-left: 50px;
-  width: calc(50% - 50px);
+.leftImg .rightContent {
+  padding: 60px 50px 50px 0;
+  width: 50%;
 }
 
 .leftImg figure {
-  margin-right: 50px;
-  width: calc(50%-50px);
+  margin-right: 100px;
+  width: calc(50%-100px);
 }
 
 .leftImg figure img {
   position: relative;
-  left: -100px;
   top: -30px;
   -webkit-box-shadow: 30px 30px #FE6F19;
           box-shadow: 30px 30px #FE6F19;
+}
+
+.rightImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rightImg .leftContent {
+  text-align: right;
+  padding: 60px 0 60px 50px;
+  width: 50%;
+}
+
+.rightImg figure {
+  margin-left: 100px;
+  width: calc(50%-100px);
+}
+
+.rightImg figure img {
+  position: relative;
+  bottom: -30px;
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
 }
 
 .rightContent h4,
@@ -507,49 +540,76 @@ h1 {
   padding-bottom: 30px;
 }
 
-.rightImg {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+.thirdSection {
+  background-color: #FAE5FF;
+  padding: 100px 0;
 }
 
-.rightImg .leftContent {
-  text-align: right;
-  margin-right: 50px;
-  padding: 60px 0;
-  width: calc(50% - 50px);
+.thirdSection .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.rightImg figure {
-  margin-left: 50px;
-  width: calc(50%-50px);
-}
-
-.rightImg figure img {
-  position: relative;
-  right: -100px;
-  bottom: -30px;
-  -webkit-box-shadow: -30px 30px #FE6F19;
-          box-shadow: -30px 30px #FE6F19;
+.thirdSection .information .infoContainer {
+  width: 50%;
+  padding: 30px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .thirdSection i {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #fff;
   background-color: #4c0341;
-  padding: 30px;
+  padding: 10px;
   border-radius: 50%;
 }
 
+.sectionInfo {
+  padding: 0px 15px;
+}
+
 .fourthSection {
-  background-image: url("../../../../week-2/prachi-gujar-project-two/shoe-kloset/banner.jpg");
+  height: auto;
+}
+
+.fifthSection {
+  background-color: #fff;
   min-height: 30vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 100px 0;
+}
+
+.fifthSection .popular {
+  margin-left: 30px;
+  width: calc(70% - 30px);
+}
+
+.fifthSection .popular h2 {
+  padding-bottom: 15px;
+}
+
+.fifthSection .popular p {
+  padding-bottom: 25px;
+}
+
+.fifthSection figure img {
+  position: relative;
+  bottom: 30px;
+  -webkit-box-shadow: 30px 30px #FE6F19;
+          box-shadow: 30px 30px #FE6F19;
 }
 
 .sixthSection {
@@ -587,4 +647,11 @@ footer a {
   text-transform: capitalize;
   color: #fff;
   text-align: center;
+  border-bottom: 2px solid transparent;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+  border-bottom: 2px solid #FAE5FF;
 }
