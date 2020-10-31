@@ -1,1 +1,109 @@
 // blog post styles
+
+
+// HEADER styles...........
+
+.blogPage{
+    background-image: url('../shoe-kloset/blog-header.jpg');
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 20px 0;
+}
+
+
+// MAIN styles.................
+
+.blogContainer{
+    background-color: $mauve;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    .mainSection{
+        margin-left: 50px;
+        width: calc(60% - 50px);
+    }
+}
+
+
+
+//Mainsection styles...........
+
+.mainPost{
+    background-color: $white;
+    position: relative;
+    top: -20vh;
+    padding-bottom: 20px;
+    .post{
+        padding: 20px;
+        .heading{
+            padding: 20px 0 50px 0;
+        }
+        p{
+            padding: 10px 0;
+        }
+    }
+
+    figure{
+        width: calc(100% - 30px);
+        img{
+            box-shadow: -30px 30px $orange;
+            position: relative;
+            top: -30px;
+            right: -30px;
+        }
+    }
+}
+
+// Main sections: COMMENTS section styles............
+.comments{
+    position: relative;
+    top: -10vh;
+    h2{
+        margin-bottom: 50px;
+    }
+}
+
+.commentInfo{
+    display: flex;
+    div{
+        padding: 30px 20px;
+        width: calc(70% - 60px);
+        .blogDate{
+            padding-bottom: 15px;
+        }
+    }
+
+    figure{
+        padding:20px;
+        width: 30%;
+    }
+}
+
+
+// ASIDE section styles.........
+aside{
+    order: -1;
+    padding: 20px;
+    margin: 50px 20px 0 100px;
+    width: calc(40% - 120px);
+    .asideContent{
+        background-color: $white;
+        section{
+            padding:30px;
+        }
+
+        figure{
+            width:calc(100% + 100px);
+            // adding the 100px of margin left in the width of the figure
+            position: relative;
+            left: -120px;
+            // in addition to the width of the figure, 20px of padding was added to positioning
+            top: -20px;
+        }
+    }
+}
+

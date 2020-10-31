@@ -217,7 +217,7 @@ html {
           box-sizing: inherit;
 }
 
-.sr-only {
+.srOnly {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -276,6 +276,12 @@ h1.about {
   line-height: 9.2rem;
   letter-spacing: 1.2px;
   color: #4c0341;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 h2 {
@@ -305,7 +311,7 @@ h4 {
   color: #0D0D0D;
 }
 
-h5 {
+h3.blogSide {
   font-family: "Pompiere", cursive;
   font-size: 3rem;
   font-weight: 400;
@@ -324,10 +330,32 @@ h5 {
 }
 
 p,
-footer {
+footer,
+.blogNav a {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #0D0D0D;
+}
+
+.blogNav a {
+  text-transform: none;
+}
+
+.blogNav ul li {
+  list-style: none;
+}
+
+.blogNav ul li i {
+  padding-right: 10px;
+}
+
+.blogDate {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
   line-height: 3.2rem;
   letter-spacing: 1.1px;
   color: #0D0D0D;
@@ -364,14 +392,16 @@ footer,
 }
 
 .moreInfo:hover,
-.moreInfo:focus {
+.moreInfo:focus,
+.moreInfo:active {
   background-color: transparent;
   color: black;
   border: 5px solid #4c0341;
 }
 
 .readInfo:hover,
-.readInfo:focus {
+.readInfo:focus,
+.readInfo:active {
   background-color: transparent;
   color: black;
   border: 5px solid #882c07;
@@ -388,6 +418,37 @@ h1.blog,
 h1.about {
   text-transform: uppercase;
   text-decoration: none;
+}
+
+input,
+textarea {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #0D0D0D;
+}
+
+.submit {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 20px;
+  background-color: #4c0341;
+  border: 5px solid #4c0341;
+}
+
+.submit:hover,
+.submit:focus,
+.submit:active {
+  background-color: transparent;
+  color: black;
+  border: 5px solid #4c0341;
 }
 
 .topNav {
@@ -635,6 +696,158 @@ h1 {
 
 .gallery figure:nth-child(3) {
   margin-right: 0;
+}
+
+.blogPage {
+  background-image: url("../shoe-kloset/blog-header.jpg");
+  min-height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  padding: 20px 0;
+}
+
+.blogContainer {
+  background-color: #FAE5FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.blogContainer .mainSection {
+  margin-left: 50px;
+  width: calc(60% - 50px);
+}
+
+.mainPost {
+  background-color: #fff;
+  position: relative;
+  top: -20vh;
+  padding-bottom: 20px;
+}
+
+.mainPost .post {
+  padding: 20px;
+}
+
+.mainPost .post .heading {
+  padding: 20px 0 50px 0;
+}
+
+.mainPost .post p {
+  padding: 10px 0;
+}
+
+.mainPost figure {
+  width: calc(100% - 30px);
+}
+
+.mainPost figure img {
+  -webkit-box-shadow: -30px 30px #FE6F19;
+          box-shadow: -30px 30px #FE6F19;
+  position: relative;
+  top: -30px;
+  right: -30px;
+}
+
+.comments {
+  position: relative;
+  top: -10vh;
+}
+
+.comments h2 {
+  margin-bottom: 50px;
+}
+
+.commentInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.commentInfo div {
+  padding: 30px 20px;
+  width: calc(70% - 60px);
+}
+
+.commentInfo div .blogDate {
+  padding-bottom: 15px;
+}
+
+.commentInfo figure {
+  padding: 20px;
+  width: 30%;
+}
+
+aside {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  padding: 20px;
+  margin: 50px 20px 0 100px;
+  width: calc(40% - 120px);
+}
+
+aside .asideContent {
+  background-color: #fff;
+}
+
+aside .asideContent section {
+  padding: 30px;
+}
+
+aside .asideContent figure {
+  width: calc(100% + 100px);
+  position: relative;
+  left: -120px;
+  top: -20px;
+}
+
+.formContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+input[type="text"],
+input[type="email"] {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FE6F19;
+  padding: 20px 5px;
+}
+
+input[type="text"] {
+  margin: 0;
+  margin-right: 20px;
+  width: calc(50% - 20px);
+}
+
+input[type="email"] {
+  margin: 0;
+  margin-left: 20px;
+  width: calc(50% - 20px);
+}
+
+textarea[id="message"] {
+  background-color: transparent;
+  border: 2px solid #FE6F19;
+  padding: 10px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+input[type="submit"] {
+  padding: 15px 30px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 footer {

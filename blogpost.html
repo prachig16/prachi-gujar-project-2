@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="blogPage">
         <div class="wrapper">
             <div class="topContainer">
     
@@ -29,5 +29,113 @@
         </div>
     </header>
     
+    <main class="blogContainer">
+        <div class="mainSection">
+            <div class="mainPost">
+                <figure>
+                    <img src="./shoe-kloset/blog-post-image.jpg"
+                        alt="bodyshot of two people wearing clothes with blue hues and heels, walking with white bench as a background">
+                </figure>
+                <article class="wrapper post">
+                    <div class="heading">
+                        <h2>shoes around the world</h2>
+                        <span class="blogDate">Monday May 4th, 2019 by Dieula</span>
+                    </div>
+                    
+                    <p>You can only go forward by making mistakes. Clothes mean nothing until someone lives in them. I can design a collection
+                    in a day and I always do, cause I've always got a load of Italians on my back, moaning that it's late. Never in my
+                    wildest dreams did I entertain the idea that I would become a fashion designer. A lot of self-importance goes on in the
+                    fashion industry. I'm not like that</p>
+                
+                    <p>You can hide so much behind theatrics, and I don't need to do that any more. The key to my collections is sensuality.
+                    I've always thought of the T-shirt as the Alpha and Omega of the fashion alphabet. The great thing about fashion is that
+                    it always looks forward. I am no longer concerned with sensation and innovation, but with the perfection of my style.</p>
+                
+                    <p>You have to stay true to your heritage; that's what your brand is about. I can't get sucked into that celebrity thing,
+                    because I think it's just crass. The only way to do something in depth is to work hard. Success isn't about the end
+                    result, it's about what you learn along the way. I like the body. I like to design everything to do with the body.</p>
+                </article>
+            </div>
+            
+            <div class="comments">
+                <h2>comments:</h2>
+                <section class="commentInfo">
+                    <figure>
+                        <img src="./shoe-kloset/comment-1.jpg" alt="headshot of a user in green shirt and white Tshirt">
+                    </figure>
+                    <div class="wrapper1">
+                        <p class="blogDate">
+                            Tuesday November 21th, 2019 by Jeremy
+                        </p>
+                        <p>
+                            I like things simple. I like the things around me to be beautiful and slightly dreamy, with a feeling of worldliness. I
+                            do not have one theme for each season.
+                        </p>
+                    </div>
+                </section>
+                <section class="commentInfo">
+                    <figure>
+                        <img src="./shoe-kloset/comment-2.jpg" alt="headshot of a user in denim shirt and leaf headgear">
+                    </figure>
+                    <div class="wrapper1">
+                        <p class="blogDate">
+                            Wednesday November 10th,2019 by Julia
+                        </p>
+                        <p>
+                            You have to always work against what you did before, and even against your taste. It pains me physically to see a woman
+                            victimized, rendered pathetic, by fashion.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <form action="#" class="wrapper">
+                <div class="formContainer">
+                    <label for="name" class="srOnly">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    
+                    <label for="email" class="srOnly">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email address">
+                </div>
+        
+                <label for="message" class="srOnly">Message</label>
+                <textarea name="message" id="message" cols="70" rows="10" placeholder="Comment" required
+                    maxlength="200"></textarea>
+            
+                <input type="submit" class="submit" value="post comment">
+            </form>
+        </div>
+        
+        <aside>
+            <div class="asideContent">
+                <figure>
+                    <img src="./shoe-kloset/sidebar-image.jpg" alt="nike black shoes bouncing on water">
+                </figure>
+                <section>
+                    <h3 class="blogSide">any weather</h5>
+                        <p>
+                            Men have got more of a discerning eye. They appreciate cut and details, things.
+                        </p>
+                </section>
+                <section>
+                    <h3 class="blogSide">recent posts</h5>
+                        <nav class="blogNav">
+                            <ul>
+                                <li><i class="fas fa-circle"></i><a href=#>Democracy in fashion</a></li>
+                                <li><i class="fas fa-circle"></i><a href="#">When I was young,</a></li>
+                                <li><i class="fas fa-circle"></i><a href="#">Design is a constant</a></li>
+                                <li><i class="fas fa-circle"></i><a href="#">Fashion fosters cliches of</a></li>
+                            </ul>
+                        </nav>
+                </section>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p class="wrapper"> Copyright <i class="far fa-copyright"></i> 2019 HackerYou | <a
+                href="https://junocollege.com/">Created at Juno College of Technology</a>
+        </p>
+    </footer>
 </body>
 </html>
