@@ -1,0 +1,64 @@
+// home page styles
+
+
+// HEADER styles
+.homePage,
+.blogPage,
+.contactPage,
+.aboutPage{
+    background-image: url('../shoe-kloset/header-image.jpg');
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 20px 0;
+    h1{
+        margin: 0;
+        padding: 150px 0;
+        max-width: 20%;
+    }
+}
+
+h1.contact,
+h1.blog,
+h1.about{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.topContainer{
+    display: flex;
+    justify-content:space-between;
+}
+
+.logo{
+    max-width: 10%;
+}
+
+.headerImg{
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: 0;
+    bottom: 20vh;
+}
+
+
+// BLOGPOST style.....
+
+
+.blogPage{
+    background-image: url('../shoe-kloset/blog-header.jpg');
+}
+
+
+// CONTACT page style
+.contactPage{
+    background-image: url('../shoe-kloset/contact-image.jpg');
+}
