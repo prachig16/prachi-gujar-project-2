@@ -41,6 +41,11 @@ h3.blogSide,
     }    
 }
 
+.slidingMenu a{
+    @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
+    color: $plum;
+    text-align: center;
+}
 
 .topNav a{
     @include fontDef($lato,2rem ,700 ,2.9rem ,1px )
@@ -191,26 +196,3 @@ textarea{
 }
 
 
-// Removing hover properties for phone users....
-@media (max-width:750px){
-
-    .moreInfo:hover,
-    .readInfo:hover,
-    .submit:hover,
-    .contactForm .submit:hover{
-        color:white;
-    }
-    .moreInfo:hover,
-    .readInfo:hover,
-    .submit:hover{
-        background-color:$plum;
-        border: 5px solid $plum;
-    }
-
-    .readInfo:hover,
-    .contactForm .submit:hover{
-        background-color: $red;
-        border: 5px solid $red;
-    }
-
-}

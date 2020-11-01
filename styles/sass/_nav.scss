@@ -51,10 +51,43 @@
     border-bottom: 3px solid $plum;
 }
 
-// Removing the hover styles for mobile site....
-
-@media (max-width: 750px){
-    .socialNav a:hover{
-        border-bottom: 3px solid transparent;    
+/* SLIDING Menu styles ------------------------------------*/
+/* Credit: The code was written with reference to the code exercise completed during ConEd web dev  course*/
+.slidingMenuToggle{
+    display: none;
+    padding-top:20px;
+    .slidingMenu {
+        background: $mauve;	
+        min-height: 100vh;
+        position: fixed;
+        right: -35%;
+        width: 35%;
+        transition: 0.5s;
+        li{
+            list-style: none;
+        }
     }
 }
+
+
+
+.slidingMenu a{
+    display: inline-block;
+    padding: 20px;
+    width: 100%;
+}
+
+.slidingMenu a:focus,
+.slidingMenu a:active{
+    border-bottom: 1px solid $plum;
+} 
+
+label {
+    position: fixed;
+    color: $plum;
+    font-size: 3rem;
+    top: 20px;
+    right: 20px;
+}
+
+

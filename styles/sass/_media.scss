@@ -1,0 +1,56 @@
+// MEDIA Queries applicable for all pages..
+
+// NAV changes......
+@media (max-width: 1024px){
+    .topNav{
+        visibility: hidden;
+    }
+
+    .slidingMenuToggle{
+        display: block;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked + .slidingMenu {
+        right: 0;
+        z-index: 999;
+    }
+}
+
+
+// MOBILE Version.........
+@media (max-width:750px){
+
+    // Removing hover properties for phone users....
+    .moreInfo:hover,
+    .readInfo:hover,
+    .submit:hover,
+    .contactForm .submit:hover{
+        color:white;
+        font-weight: 400;
+    }
+    .moreInfo:hover,
+    .readInfo:hover,
+    .submit:hover{
+        background-color:$plum;
+        border: 5px solid $plum;
+        font-weight: 400;
+    }
+
+    .readInfo:hover,
+    .contactForm .submit:hover{
+        background-color: $red;
+        border: 5px solid $red;
+    }
+}
+
+// THHIRD Breaking point where shoe kloset logo cannot be seen 
+
+@media (max-width: 690px){
+    .homePage .logo{
+        color: $mauve;
+    }
+}

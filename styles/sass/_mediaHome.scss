@@ -1,0 +1,95 @@
+// MEDIA Queries...
+
+// First breakpoint for header image
+
+@media (max-width: 900px){
+ 
+    .headerImg{
+        bottom: -5vh;
+    }
+}
+
+
+// MEDIA Query for MOBILE version...
+
+@media (max-width:750px){
+
+    // HEADER offset image.....
+    .headerImg{
+        width: 35%;
+        bottom: -20vh;
+    }
+
+    // SECOND Section styles.....
+    .leftImg{
+        flex-wrap: wrap;
+        figure{
+            margin: 50px auto;
+            width: 80%;
+            img{
+                position: static;
+            }
+        }
+        .rightContent{
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+        }
+    }
+
+    .rightImg{
+        flex-wrap: wrap;
+        figure{
+            margin: 50px auto;
+            width: 80%;
+            img{
+                position: static;
+            }
+        }    
+        .leftContent{
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+        }
+    }
+
+    // THIRD section styles...
+    .thirdSection {
+        padding: 50px 0;
+        .information .infoContainer{
+            width: 100%;
+        }
+    }
+
+    // FIFTH Section styles.....
+    .fifthSection{
+        flex-wrap: wrap;
+        padding: 0;
+        figure{
+            margin: 50px auto;
+            width: 50%;
+            img{
+                position: static;
+            }
+        }
+        .popular{
+            text-align: center;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+        }
+    }
+    
+    // SIXTH section styles....
+    .sixthSection .gallery{
+        flex-wrap: wrap;
+        figure{
+            margin: 20px auto;
+            padding: 10px;
+            width: 60%;
+        }
+    }
+
+}

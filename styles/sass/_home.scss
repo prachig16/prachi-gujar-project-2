@@ -112,10 +112,12 @@
 }
 
 // FIFTH section styles..............
-
-.fifthSection{
+.fifth{
     background-color: $white;
     min-height: 30vh;
+}
+
+.fifthSection{
     display: flex;
     justify-content: space-between;
     padding: 100px 0;
