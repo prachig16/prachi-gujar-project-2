@@ -1,5 +1,5 @@
 // MEDIA queries for contact page.....
-@media (max-width: 750px){
+@media (max-width: 768px){
     .contactPage{
         h1.contact{
             width: auto;
@@ -9,11 +9,14 @@
     .contactContainer{
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 50px;
+        padding: 30px 10px;
+        width: 100;
         
         .contactForm{
             position: static;
+            box-shadow: -10px 10px $orange;
             margin: 0 auto;
+            padding: 15px;
             width: 100%;
         }
 

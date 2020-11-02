@@ -3,7 +3,7 @@
 // NAV changes......
 @media (max-width: 1024px){
     .topNav{
-        visibility: hidden;
+        display: none;
     }
 
     .slidingMenuToggle{
@@ -22,7 +22,7 @@
 
 
 // MOBILE Version.........
-@media (max-width: 750px){
+@media (max-width: 768px){
     
     // Removing hover properties for phone users....
     .moreInfo:hover,
@@ -57,9 +57,15 @@
         flex-wrap: wrap;
         input[type="text"],
         input[type="email"]{
-            margin: 0 0 10px;
-            width: 100%;
+            font-size: 1.8rem;
+            margin: 0 auto 10px;
+            width: 90%;
         }
+    }
+
+    textarea[id="message"]{
+        font-size: 1.8rem;
+        height: 40vh;
     }
 
     footer p{
@@ -70,7 +76,8 @@
 // THHIRD Breaking point where shoe kloset logo cannot be seen 
 
 @media (max-width: 690px){
-    .homePage .logo{
+    .homePage .logo,
+    .aboutPage .logo{
         color: $mauve;
     }
 }

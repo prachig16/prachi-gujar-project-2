@@ -1,5 +1,5 @@
 // MEDIA Queries for Blog post page....
-@media (max-width: 750px){
+@media (max-width: 768px){
     .blogContainer{
         display: block;
         padding: 30px 0;
@@ -28,6 +28,8 @@
             }
             .commentInfo div{
                 padding: 20px;
+                margin: 0;
+                width: 100%;
             }
         }
 

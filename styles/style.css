@@ -1076,7 +1076,7 @@ footer a:active {
 
 @media (max-width: 1024px) {
   .topNav {
-    visibility: hidden;
+    display: none;
   }
   .slidingMenuToggle {
     display: block;
@@ -1090,7 +1090,7 @@ footer a:active {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .moreInfo:hover,
   .readInfo:hover,
   .submit:hover,
@@ -1121,8 +1121,13 @@ footer a:active {
   }
   .formContainer input[type="text"],
   .formContainer input[type="email"] {
-    margin: 0 0 10px;
-    width: 100%;
+    font-size: 1.8rem;
+    margin: 0 auto 10px;
+    width: 90%;
+  }
+  textarea[id="message"] {
+    font-size: 1.8rem;
+    height: 40vh;
   }
   footer p {
     font-size: 1.5rem;
@@ -1130,7 +1135,8 @@ footer a:active {
 }
 
 @media (max-width: 690px) {
-  .homePage .logo {
+  .homePage .logo,
+  .aboutPage .logo {
     color: #FAE5FF;
   }
 }
@@ -1141,7 +1147,7 @@ footer a:active {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .headerImg {
     width: 35%;
     bottom: -45vh;
@@ -1215,7 +1221,7 @@ footer a:active {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .blogContainer {
     display: block;
     padding: 30px 0;
@@ -1240,6 +1246,8 @@ footer a:active {
   }
   .blogContainer .mainSection .comments .commentInfo div {
     padding: 20px;
+    margin: 0;
+    width: 100%;
   }
   .blogContainer .mainSection form {
     margin-top: 20px;
@@ -1262,7 +1270,7 @@ footer a:active {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
   .contactPage h1.contact {
     width: auto;
     text-align: center;
@@ -1274,11 +1282,15 @@ footer a:active {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 50px;
+    padding: 30px 10px;
+    width: 100;
   }
   .contactContainer .contactForm {
     position: static;
+    -webkit-box-shadow: -10px 10px #FE6F19;
+            box-shadow: -10px 10px #FE6F19;
     margin: 0 auto;
+    padding: 15px;
     width: 100%;
   }
   .contactContainer .contactInfo {
