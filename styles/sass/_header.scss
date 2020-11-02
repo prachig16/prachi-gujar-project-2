@@ -10,7 +10,7 @@
     min-height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
     padding: 20px 0;
@@ -53,6 +53,10 @@ h1.about{
     width: 50%;
 }
 
+// ABOUT page style...
+.aboutPage{
+    min-height: 100vh;
+}
 
 // BLOGPOST style.....
 

@@ -23,6 +23,15 @@
 
 // MOBILE Version.........
 @media (max-width: 768px){
+
+    .homePage,
+    .aboutPage{
+        background-image: url('../shoe-kloset/header-image-mobile.jpg');
+    }
+
+    .blogPage{
+        background-image: url('../shoe-kloset/blog-header-mobile.jpg');
+    }
     
     // Removing hover properties for phone users....
     .moreInfo:hover,
@@ -76,7 +85,7 @@
 
 // THHIRD Breaking point where shoe kloset logo cannot be seen 
 
-@media (max-width: 690px){
+@media (max-width: 600px){
     .homePage .logo,
     .aboutPage .logo{
         color: $mauve;

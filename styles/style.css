@@ -505,7 +505,7 @@ textarea {
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   background-attachment: fixed;
   position: relative;
   padding: 20px 0;
@@ -554,6 +554,10 @@ h1.about {
   height: 50%;
   margin: 0;
   width: 50%;
+}
+
+.aboutPage {
+  min-height: 100vh;
 }
 
 .blogPage {
@@ -1089,6 +1093,13 @@ footer a:active {
 }
 
 @media (max-width: 768px) {
+  .homePage,
+  .aboutPage {
+    background-image: url("../shoe-kloset/header-image-mobile.jpg");
+  }
+  .blogPage {
+    background-image: url("../shoe-kloset/blog-header-mobile.jpg");
+  }
   .moreInfo:hover,
   .readInfo:hover,
   .submit:hover,
@@ -1133,7 +1144,7 @@ footer a:active {
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 600px) {
   .homePage .logo,
   .aboutPage .logo {
     color: #FAE5FF;
