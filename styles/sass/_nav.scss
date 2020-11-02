@@ -58,12 +58,15 @@
     padding-top: 20px;
 
     .slidingMenu {
-        background: $mauve;	
-        min-height: 100vh;
+        background: $plum;	
+        opacity: 0.8;
+        overflow: hidden;
         position: fixed;
-        right: -35%;
-        width: 35%;
-        transition: 0.5s;
+        right: 0;
+        top: -100%;
+        transition: all 1s ease-in-out;
+        height: auto;
+        width: 100%;
         li{
             list-style: none;
         }
@@ -72,17 +75,20 @@
 
 .slidingMenu a{
     display: inline-block;
+    transition: color 0.3s ease;
     padding: 20px;
     width: 100%;
 }
 
 .slidingMenu a:focus,
 .slidingMenu a:active{
-    border-bottom: 1px solid $plum;
+    color: $orange;
+    border-bottom: 1px solid $orange;
 } 
 
 label {
     position: fixed;
+    z-index: 2;
     color: $plum;
     font-size: 3rem;
     top: 20px;

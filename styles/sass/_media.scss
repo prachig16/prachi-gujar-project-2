@@ -15,8 +15,8 @@
     }
 
     input[type="checkbox"]:checked + .slidingMenu {
-        right: 0;
-        z-index: 999;
+        top: 0;
+        z-index: 1;
     }
 }
 
@@ -58,6 +58,7 @@
         input[type="text"],
         input[type="email"]{
             font-size: 1.8rem;
+            padding: 10px 5px;
             margin: 0 auto 10px;
             width: 90%;
         }
