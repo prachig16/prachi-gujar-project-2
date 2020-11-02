@@ -23,19 +23,19 @@
 
 // MOBILE Version.........
 @media (max-width:750px){
-
+    
     // Removing hover properties for phone users....
     .moreInfo:hover,
     .readInfo:hover,
     .submit:hover,
     .contactForm .submit:hover{
-        color:white;
+        color: white;
         font-weight: 400;
     }
     .moreInfo:hover,
     .readInfo:hover,
     .submit:hover{
-        background-color:$plum;
+        background-color: $plum;
         border: 5px solid $plum;
         font-weight: 400;
     }
@@ -44,6 +44,27 @@
     .contactForm .submit:hover{
         background-color: $red;
         border: 5px solid $red;
+    }
+
+    .blogNav a:hover{
+        border-bottom: 2px solid transparent;
+    }
+
+    .formContainer{
+        flex-wrap: wrap;
+        input[type="text"],
+        input[type="email"]{
+            margin: 0 0 10px;
+            width: 100%;
+        }
+
+    }
+
+    footer a:hover{
+        border-bottom: 2px solid transparent;
+    }
+    footer p{
+        font-size: 1.5rem;
     }
 }
 

@@ -361,6 +361,7 @@ footer,
 
 .blogNav a {
   text-transform: none;
+  border-bottom: 2px solid transparent;
 }
 
 .blogNav ul li {
@@ -468,6 +469,12 @@ textarea {
 .readInfo:focus,
 .readInfo:active {
   border: 5px solid #882c07;
+}
+
+.blogNav a:hover,
+.blogNav a:focus,
+.blogNav a:active {
+  border-bottom: 2px solid #4c0341;
 }
 
 .submit {
@@ -1093,6 +1100,24 @@ footer a:active {
     background-color: #882c07;
     border: 5px solid #882c07;
   }
+  .blogNav a:hover {
+    border-bottom: 2px solid transparent;
+  }
+  .formContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .formContainer input[type="text"],
+  .formContainer input[type="email"] {
+    margin: 0 0 10px;
+    width: 100%;
+  }
+  footer a:hover {
+    border-bottom: 2px solid transparent;
+  }
+  footer p {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 690px) {
@@ -1178,5 +1203,52 @@ footer a:active {
     margin: 20px auto;
     padding: 10px;
     width: 60%;
+  }
+}
+
+@media (max-width: 750px) {
+  .blogContainer {
+    display: block;
+    padding: 30px 0;
+  }
+  .blogContainer .mainSection {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .blogContainer .mainSection .mainPost {
+    position: static;
+  }
+  .blogContainer .mainSection .mainPost figure {
+    padding: 30px;
+    width: 100%;
+  }
+  .blogContainer .mainSection .comments {
+    position: static;
+    margin-top: 30px;
+  }
+  .blogContainer .mainSection .comments h2 {
+    margin-bottom: 30px;
+  }
+  .blogContainer .mainSection .comments .commentInfo div {
+    padding: 20px;
+  }
+  .blogContainer .mainSection form {
+    margin-top: 20px;
+  }
+  .mainPost figure img {
+    position: static;
+  }
+  .blogContainer aside {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .blogContainer aside .asideContent figure {
+    position: static;
+    padding: 20px;
+    width: 100%;
+  }
+  .blogContainer aside .asideContent section {
+    text-align: center;
+    padding: 0 30px 30px;
   }
 }

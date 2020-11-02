@@ -61,7 +61,9 @@ footer,
 
 .blogNav a{
     text-transform: none;
+    border-bottom: 2px solid transparent;
 }
+
 
 .blogNav ul li{
     list-style: none;
@@ -166,6 +168,12 @@ textarea{
     border: 5px solid $red;
 }
 
+// BLOGPOST page post navigation hover styles.....
+.blogNav a:hover,
+.blogNav a:focus,
+.blogNav a:active{
+    border-bottom: 2px solid $plum;
+}
 
 // BLOGPOST submit BUTTON styles...
 .submit{
