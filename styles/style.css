@@ -505,6 +505,7 @@ textarea {
   min-height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top;
   background-attachment: fixed;
   position: relative;
   padding: 20px 0;
