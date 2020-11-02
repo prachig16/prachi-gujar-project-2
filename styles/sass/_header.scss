@@ -16,9 +16,12 @@
     padding: 20px 0;
     h1{
         margin: 0;
-        padding: 150px 0;
-        max-width: 20%;
     }
+}
+
+h1.home{
+    padding: 150px 0;
+    max-width: 20%;
 }
 
 h1.contact,
@@ -34,7 +37,7 @@ h1.about{
 
 .topContainer{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
 .logo{

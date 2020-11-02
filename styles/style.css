@@ -297,6 +297,16 @@ h3 {
   color: #0D0D0D;
 }
 
+h3.blogSide,
+.emailInfo {
+  font-family: "Pompiere", cursive;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 1.3px;
+  color: #4c0341;
+}
+
 h4 {
   font-family: "Pompiere", cursive;
   font-size: 4.2rem;
@@ -306,14 +316,42 @@ h4 {
   color: #0D0D0D;
 }
 
-h3.blogSide,
-.emailInfo {
+.topNav a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.9rem;
+  letter-spacing: 1px;
+  color: #0D0D0D;
+}
+
+.slidingMenu a {
   font-family: "Pompiere", cursive;
   font-size: 3rem;
   font-weight: 400;
   line-height: 5rem;
   letter-spacing: 1.3px;
   color: #4c0341;
+  text-align: center;
+}
+
+.blogNav ul li {
+  list-style: none;
+}
+
+.blogNav ul li i {
+  padding-right: 10px;
+}
+
+.blogNav ul li a {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.2rem;
+  letter-spacing: 1.1px;
+  color: #0D0D0D;
+  text-transform: none;
+  border-bottom: 2px solid transparent;
 }
 
 .socialNav li {
@@ -329,47 +367,14 @@ h3.blogSide,
   color: #4c0341;
 }
 
-.slidingMenu a {
-  font-family: "Pompiere", cursive;
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 5rem;
-  letter-spacing: 1.3px;
-  color: #4c0341;
-  text-align: center;
-}
-
-.topNav a {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 2.9rem;
-  letter-spacing: 1px;
-  color: #0D0D0D;
-}
-
 p,
-footer,
-.blogNav a {
+footer {
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 400;
   line-height: 3.2rem;
   letter-spacing: 1.1px;
   color: #0D0D0D;
-}
-
-.blogNav a {
-  text-transform: none;
-  border-bottom: 2px solid transparent;
-}
-
-.blogNav ul li {
-  list-style: none;
-}
-
-.blogNav ul li i {
-  padding-right: 10px;
 }
 
 .blogDate {
@@ -390,11 +395,6 @@ footer,
   color: #0D0D0D;
 }
 
-footer,
-.firstSection h2 {
-  text-align: center;
-}
-
 a,
 h2,
 h3,
@@ -407,6 +407,11 @@ h1.about,
 .emailInfo {
   text-transform: uppercase;
   text-decoration: none;
+}
+
+footer,
+.firstSection h2 {
+  text-align: center;
 }
 
 input,
@@ -520,6 +525,9 @@ textarea {
 .contactPage h1,
 .aboutPage h1 {
   margin: 0;
+}
+
+h1.home {
   padding: 150px 0;
   max-width: 20%;
 }
@@ -616,7 +624,7 @@ h1.about {
 
 .socialNav a {
   padding-bottom: 5px;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .socialNav li:nth-child(1) {
@@ -626,7 +634,7 @@ h1.about {
 .socialNav a:hover,
 .socialNav a:focus,
 .socialNav a:active {
-  border-bottom: 3px solid #4c0341;
+  border-bottom: 2px solid #4c0341;
 }
 
 /* SLIDING Menu styles ------------------------------------*/
@@ -869,6 +877,8 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding: 50px 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .contactContainer .contactForm {
@@ -1100,7 +1110,9 @@ footer a:active {
     background-color: #882c07;
     border: 5px solid #882c07;
   }
-  .blogNav a:hover {
+  .blogNav a:hover,
+  .socialNav a:hover,
+  footer a:hover {
     border-bottom: 2px solid transparent;
   }
   .formContainer {
@@ -1111,9 +1123,6 @@ footer a:active {
   .formContainer input[type="email"] {
     margin: 0 0 10px;
     width: 100%;
-  }
-  footer a:hover {
-    border-bottom: 2px solid transparent;
   }
   footer p {
     font-size: 1.5rem;
@@ -1135,7 +1144,7 @@ footer a:active {
 @media (max-width: 750px) {
   .headerImg {
     width: 35%;
-    bottom: -20vh;
+    bottom: -45vh;
   }
   .leftImg {
     -ms-flex-wrap: wrap;
@@ -1250,5 +1259,44 @@ footer a:active {
   .blogContainer aside .asideContent section {
     text-align: center;
     padding: 0 30px 30px;
+  }
+}
+
+@media (max-width: 750px) {
+  .contactPage h1.contact {
+    width: auto;
+    text-align: center;
+  }
+  .contactContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 50px;
+  }
+  .contactContainer .contactForm {
+    position: static;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .contactContainer .contactInfo {
+    margin-top: 50px;
+    width: 100%;
+  }
+  .contactContainer .contactInfo p {
+    text-align: center;
+  }
+  .socialNav {
+    width: 100%;
+  }
+  .socialNav ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .socialNav ul li:nth-child(1n) {
+    padding: 20px;
   }
 }

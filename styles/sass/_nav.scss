@@ -1,4 +1,4 @@
-
+// NAV styles for Header NAV, Sliding NAV, BLOG post NAV and Social websites NAV
 
 // TOP Nav styles....
 .topNav{
@@ -38,7 +38,7 @@
 
 .socialNav a{
         padding-bottom: 5px;
-        border-bottom: 3px solid transparent;
+        border-bottom: 2px solid transparent;
 }
 
 .socialNav li:nth-child(1){
@@ -48,14 +48,15 @@
 .socialNav a:hover,
 .socialNav a:focus,
 .socialNav a:active{
-    border-bottom: 3px solid $plum;
+    border-bottom: 2px solid $plum;
 }
 
 /* SLIDING Menu styles ------------------------------------*/
 /* Credit: The code was written with reference to the code exercise completed during ConEd web dev  course*/
 .slidingMenuToggle{
     display: none;
-    padding-top:20px;
+    padding-top: 20px;
+
     .slidingMenu {
         background: $mauve;	
         min-height: 100vh;
@@ -68,8 +69,6 @@
         }
     }
 }
-
-
 
 .slidingMenu a{
     display: inline-block;

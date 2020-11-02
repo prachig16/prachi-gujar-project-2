@@ -8,6 +8,7 @@ main{
     flex-direction: row-reverse;
     align-items: center;
     padding: 50px 0;
+    flex-wrap: nowrap;
     .contactForm{
         padding: 50px;
         background-color: $white;

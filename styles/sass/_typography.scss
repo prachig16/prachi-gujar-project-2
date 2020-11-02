@@ -1,13 +1,16 @@
+// TYPOGRAPHY general styles.....
+
+// HEADING styles......
 h1{
     @include fontDef($fontDefault, 11rem)
-    color:$plum;
+    color: $plum;
 }
 
 h1.contact,
 h1.blog,
 h1.about{
     @include fontDef($fontDefault, 8rem,400,9.2rem,1.2px)
-    color:$plum;
+    color: $plum;
     text-align: center;
 }
 
@@ -21,18 +24,51 @@ h3{
     color: $black;
 }
 
-
-h4{
-    @include fontDef($fontDefault, 4.2rem ,400 , 5rem, 1.3px)
-    color:$black;
-}
-
 h3.blogSide,
 .emailInfo{
     @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
     color: $plum;
 }
 
+h4{
+    @include fontDef($fontDefault, 4.2rem ,400 , 5rem, 1.3px)
+    color: $black;
+}
+
+
+// NAV typography styles.....
+
+// Header Nav style...
+.topNav a{
+    @include fontDef($lato,2rem ,700 ,2.9rem ,1px )
+    color: $black;
+}
+
+
+// Header Nav Styles for mobile version.....
+.slidingMenu a{
+    @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
+    color: $plum;
+    text-align: center;
+}
+
+
+// BLOGPOST page post nav styles......
+.blogNav ul li{
+    list-style: none;
+    i{
+        padding-right: 10px;
+    }
+    a{
+        @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px)
+        color: $black;
+        text-transform: none;
+        border-bottom: 2px solid transparent;
+    }
+}
+
+
+// CONTACT page Social nav styles....
 .socialNav li{
     list-style: none;
     a{
@@ -41,37 +77,12 @@ h3.blogSide,
     }    
 }
 
-.slidingMenu a{
-    @include fontDef($fontDefault, 3rem ,400 , 5rem, 1.3px)
-    color: $plum;
-    text-align: center;
-}
-
-.topNav a{
-    @include fontDef($lato,2rem ,700 ,2.9rem ,1px )
-    color: $black;
-}
-
+// Body text styles.......
 p,
-footer,
-.blogNav a{
+footer{
     @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px)
     color: $black;
 }
-
-.blogNav a{
-    text-transform: none;
-    border-bottom: 2px solid transparent;
-}
-
-
-.blogNav ul li{
-    list-style: none;
-    i{
-        padding-right: 10px;
-    }
-}
-
 
 .blogDate{
     @include fontDef($lato, 2rem ,700 ,3.2rem ,1.1px)
@@ -83,11 +94,8 @@ footer,
     color:$black;
 }
 
-footer,
-.firstSection h2{
-    text-align: center;
-}
 
+// Alignment and text styles.....
 a,
 h2,
 h3,
@@ -102,15 +110,18 @@ h1.about,
     text-decoration: none;
 }
 
+footer,
+.firstSection h2{
+    text-align: center;
+}
 
-// Form typography
+
+// Form typography for BLOGPOST and CONTACT pages.....
 input,
 textarea{
     @include fontDef($lato, 2rem ,400 ,3.2rem ,1.1px);
     color: $black;
 }
-
-
 
 
 // BUTTON styles.......
@@ -143,7 +154,7 @@ textarea{
     font-weight: 700;
 }
 
-// HOME Button styles...
+// HOME page Button styles...
 
 .moreInfo,
 .readInfo{
@@ -187,7 +198,6 @@ textarea{
 .submit:active{
     border: 5px solid $plum;
 }
-
 
 
 // CONTACT submit BUTTON styles....

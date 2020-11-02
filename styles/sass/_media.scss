@@ -1,4 +1,4 @@
-// MEDIA Queries applicable for all pages..
+// MEDIA Queries applicable for general styles..
 
 // NAV changes......
 @media (max-width: 1024px){
@@ -22,7 +22,7 @@
 
 
 // MOBILE Version.........
-@media (max-width:750px){
+@media (max-width: 750px){
     
     // Removing hover properties for phone users....
     .moreInfo:hover,
@@ -46,7 +46,10 @@
         border: 5px solid $red;
     }
 
-    .blogNav a:hover{
+    
+    .blogNav a:hover,
+    .socialNav a:hover,
+    footer a:hover{
         border-bottom: 2px solid transparent;
     }
 
@@ -57,12 +60,8 @@
             margin: 0 0 10px;
             width: 100%;
         }
-
     }
 
-    footer a:hover{
-        border-bottom: 2px solid transparent;
-    }
     footer p{
         font-size: 1.5rem;
     }

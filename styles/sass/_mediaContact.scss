@@ -1,0 +1,39 @@
+// MEDIA queries for contact page.....
+@media (max-width: 750px){
+    .contactPage{
+        h1.contact{
+            width: auto;
+            text-align: center;
+        }
+    }
+    .contactContainer{
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 50px;
+        
+        .contactForm{
+            position: static;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .contactInfo{
+            margin-top: 50px;
+            width: 100%;
+            p{
+                text-align: center;
+            }
+        }
+    }
+
+    // Aligning the social Nav...
+    .socialNav{
+        width: 100%;
+        ul{
+            justify-content: center;
+            li:nth-child(1n){
+                padding: 20px;
+            }
+        }
+    }    
+}
